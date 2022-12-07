@@ -1,16 +1,13 @@
 idade = []
 i = 0
-valor = int(input("Digite um número: "))
-while True:
+
+while i>=0:
+  valor = int(input("Digite um número: "))
   idade.append(valor)
-  for i in range(len(idade)):
-    print(idade)
-    if idade[-1] >= 0:
-      print("Não há um número negativo no final")
-      media = sum(idade) / len(idade)
-      print("Essa é a média da idade dos individuos", media)
-    elif idade[-1] < 0:
+  for i in range(len(idade)):      
+    if idade[-1] < 0:
       del idade[-1]
       media = sum(idade) / len(idade)
-      print(media)
-
+      print("Esses foram as idades digitadas {} e a média entre as idades {}" .format((idade), media))
+      break
+  
