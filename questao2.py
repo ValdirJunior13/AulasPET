@@ -1,6 +1,7 @@
+horarioInicial = []
 horaInicial = int(input("Digite a hora inicial: "))
 minInicial = int(input("Digite os minutos iniciais: "))
-horarioInicial = []
+
 horarioInicial.append(horaInicial)
 horarioInicial.append(minInicial)
 
