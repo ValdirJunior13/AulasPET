@@ -15,11 +15,13 @@ while True:
   diasAtraso = int(input("Digite os dias atrasados: "))
   relatorioPrestacao = []
   relatorioPrestacao.append(valorPrestacao)
-  
-  for i in range(len(relatorioPrestacao)):
-    if valorPrestacao != 0:
-        valorPagamento(valorPrestacao, diasAtraso)
+  if valorPrestacao != 0:
+        relatorioPrestacao.append(valorPrestacao)
+        valorPagamento(valorPrestacao, diasAtraso)      
 
-    elif valorPrestacao == 0:
-       print("Esse foi o valor das prestações {} e a soma dos ganhos {} " .format(relatorioPrestacao, sum(relatorioPrestacao)))
+  elif valorPrestacao == 0:
+       relatorioPrestacao.append(valorPrestacao)
+       for i in range(0, len(relatorioPrestacao)):
+        print("Esse foi o valor das prestações {} e a soma dos ganhos {} " .format((relatorioPrestacao), sum(relatorioPrestacao)))
+        break
     
