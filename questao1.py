@@ -12,5 +12,5 @@ while n < 5:
     impar.append(num)
     
 
-print("a quantidade de números pares foi {} e os números são {}" .format(len(par), par))
-print("a quantidade de números pares foi {} e os números são {}" .format(len(impar), impar))
+print("a quantidade de números pares foram {} e os números são: {}" .format(len(par), par))
+print("a quantidade de números impares foram {} e os números são {}" .format(len(impar), impar))
